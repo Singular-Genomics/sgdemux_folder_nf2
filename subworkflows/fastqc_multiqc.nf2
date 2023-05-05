@@ -6,7 +6,6 @@ process fastqc {
 
     cpus 2
     memory 4.GB
-    errorStrategy 'ignore'
     publishDir params.out+'/fastqc', pattern: '*.html', overwrite: true
 
     input:
