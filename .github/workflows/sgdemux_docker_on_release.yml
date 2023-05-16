@@ -20,7 +20,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD  
     - name: Build the Docker image
-      working-directory: DockerRecipes/sgdemx
+      working-directory: DockerRecipes/sgdemux
       run: |
         docker build . --file Dockerfile --tag omicpublic/sgdemux:$RELEASE_VERSION
     - name: docker push
